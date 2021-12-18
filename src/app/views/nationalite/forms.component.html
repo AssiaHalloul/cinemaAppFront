@@ -1,0 +1,32 @@
+<div class="animated fadeIn">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Ajouter un nationalite</strong> 
+        </div>
+        <div class="card-body">
+          <form #NationaliteAddForm="ngForm" class="form-horizontal">
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Libelle</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Entrer libelle ..."
+                name="libelle"
+                [(ngModel)]="nationalite.libelle"
+                required
+                #libelle="ngModel">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary" (click)="insertNationalite()"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+        </div>
+      </div>
+
+    </div>
+  </div><!--/.row-->
+
+</div>
