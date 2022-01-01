@@ -9,7 +9,7 @@ export class AuthenticationService {
     constructor(private http: HttpClient) { }
 
     login(username: string, password: string) {
-        const optionRequete = {
+        const optionRequete = { //jjj
             headers: new HttpHeaders({
                 'Access-Control-Allow-Origin': 'http://127.0.0.1:8080',
                 'Content-Type': 'application/json',
